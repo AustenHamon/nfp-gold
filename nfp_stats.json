@@ -1,0 +1,136 @@
+{
+  "updated": "2026-11-05",
+  "next_release": "2026-11-06",
+  "next_forecast": 63.0,
+  "releases": 137,
+  "p_beat": 0.5786,
+  "p_buy": 0.4498,
+  "buckets": [
+    {
+      "label": "Big miss",
+      "lo": null,
+      "hi": -75,
+      "n": 19,
+      "p_buy_1m": 0.8421,
+      "p_buy_5m": 0.7895,
+      "avg_1m": 0.3777,
+      "avg_5m": 0.3975
+    },
+    {
+      "label": "Small miss",
+      "lo": -75,
+      "hi": 0,
+      "n": 39,
+      "p_buy_1m": 0.7436,
+      "p_buy_5m": 0.7949,
+      "avg_1m": 0.2912,
+      "avg_5m": 0.3179
+    },
+    {
+      "label": "Small beat",
+      "lo": 0,
+      "hi": 75,
+      "n": 46,
+      "p_buy_1m": 0.2391,
+      "p_buy_5m": 0.3478,
+      "avg_1m": -0.2128,
+      "avg_5m": -0.2028
+    },
+    {
+      "label": "Big beat",
+      "lo": 75,
+      "hi": null,
+      "n": 33,
+      "p_buy_1m": 0.1818,
+      "p_buy_5m": 0.2424,
+      "avg_1m": -0.3498,
+      "avg_5m": -0.3375
+    }
+  ],
+  "history": [
+    {
+      "date": "2026-10-02",
+      "actual": 29.0,
+      "forecast": 89.0,
+      "surprise": -60.0,
+      "move_1m": 0.666
+    },
+    {
+      "date": "2026-09-04",
+      "actual": 162.0,
+      "forecast": 55.0,
+      "surprise": 107.0,
+      "move_1m": -1.572
+    },
+    {
+      "date": "2026-08-07",
+      "actual": -23.0,
+      "forecast": 85.0,
+      "surprise": -108.0,
+      "move_1m": 1.002
+    },
+    {
+      "date": "2026-07-02",
+      "actual": 57.0,
+      "forecast": 114.0,
+      "surprise": -57.0,
+      "move_1m": 1.282
+    },
+    {
+      "date": "2026-06-05",
+      "actual": 172.0,
+      "forecast": 85.0,
+      "surprise": 87.0,
+      "move_1m": -0.33
+    },
+    {
+      "date": "2026-05-08",
+      "actual": 115.0,
+      "forecast": 65.0,
+      "surprise": 50.0,
+      "move_1m": -0.047
+    },
+    {
+      "date": "2026-03-06",
+      "actual": -92.0,
+      "forecast": 58.0,
+      "surprise": -150.0,
+      "move_1m": 0.707
+    },
+    {
+      "date": "2026-02-11",
+      "actual": 130.0,
+      "forecast": 66.0,
+      "surprise": 64.0,
+      "move_1m": -1.18
+    },
+    {
+      "date": "2026-01-09",
+      "actual": 50.0,
+      "forecast": 66.0,
+      "surprise": -16.0,
+      "move_1m": -0.05
+    },
+    {
+      "date": "2025-12-16",
+      "actual": 64.0,
+      "forecast": 51.0,
+      "surprise": 13.0,
+      "move_1m": 0.103
+    },
+    {
+      "date": "2025-11-20",
+      "actual": 119.0,
+      "forecast": 53.0,
+      "surprise": 66.0,
+      "move_1m": -0.097
+    },
+    {
+      "date": "2025-09-05",
+      "actual": 22.0,
+      "forecast": 75.0,
+      "surprise": -53.0,
+      "move_1m": 0.543
+    }
+  ]
+}
