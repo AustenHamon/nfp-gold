@@ -56,6 +56,35 @@
     "lean_win": 0.5507,
     "since": "2015-01-09"
   },
+  "tiers": [
+    {
+      "key": "skip",
+      "label": "Too close to call",
+      "lo": 0,
+      "hi": 20,
+      "n": 26,
+      "win": 0.6154,
+      "avg_move": 0.2287
+    },
+    {
+      "key": "weak",
+      "label": "Weak signal",
+      "lo": 20,
+      "hi": 40,
+      "n": 26,
+      "win": 0.7308,
+      "avg_move": 0.2975
+    },
+    {
+      "key": "strong",
+      "label": "Strong signal",
+      "lo": 40,
+      "hi": null,
+      "n": 85,
+      "win": 0.8471,
+      "avg_move": 0.4108
+    }
+  ],
   "history": [
     {
       "date": "2026-11-06",
