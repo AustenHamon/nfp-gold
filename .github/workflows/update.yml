@@ -1,5 +1,7 @@
 name: NFP update
 on:
+  push:
+    paths: [nfp_consensus.csv]
   schedule:
     - cron: "0 16 * * 5"   # every Friday 18:00 SAST
     - cron: "0 8 * * 6"    # Saturday backup run

@@ -1,6 +1,7 @@
 # export_stats.py  -- runs on your PC, turns the CSVs into nfp_stats.json for the phone app
 # Run after every NFP (once you've updated nfp_consensus.csv and rerun nfp_gold_dukascopy.py),
 # then copy nfp_stats.json into the Flutter project's assets folder and rebuild.
+import os
 import json, math
 from datetime import date
 from nfp_logic import load_reactions, load_calendar, pre_release_lean, BUCKETS
@@ -35,6 +36,43 @@ history = [{"date": str(r.release_date.date()), "actual": clean(r.actual),
             "forecast": clean(r.forecast), "surprise": clean(r.surprise),
             "move_1m": clean(r.move_1m_pct)} for r in recent.itertuples()]
 
+# ---- Live scoreboard: predictions saved BEFORE each release, scored after ----
+LIVE = "predictions.csv"
+preds = (pd.read_csv(LIVE, parse_dates=["release_date"]) if os.path.exists(LIVE)
+         else pd.DataFrame(columns=["release_date", "forecast", "p_beat", "call", "made_on"]))
+today = pd.Timestamp.today().normalize()
+
+# Save the prediction for the next release, only if it's at least a day away
+if len(nxt):
+    d = nxt["release_date"].iloc[0]
+    if d > today and d not in set(preds["release_date"]):
+        preds = pd.concat([preds, pd.DataFrame([{
+            "release_date": d, "forecast": float(nxt["forecast"].iloc[0]),
+            "p_beat": round(float(lean["p_beat"]), 4),
+            "call": "SELL" if lean["p_buy"] < 0.5 else "BUY",
+            "made_on": today.date()}])], ignore_index=True)
+        preds.to_csv(LIVE, index=False, date_format="%Y-%m-%d")
+
+res = preds.merge(rx[["release_date", "surprise", "dir_1m", "move_1m_pct"]],
+                  on="release_date", how="left").sort_values("release_date")
+rows, wins, losses = [], 0, 0
+for r in res.itertuples():
+    done = pd.notna(r.dir_1m)
+    won = bool(r.call == r.dir_1m) if done else None
+    wins += won is True
+    losses += won is False
+    rows.append({"date": str(r.release_date.date()), "call": r.call,
+                 "p_beat": clean(r.p_beat), "forecast": clean(r.forecast),
+                 "beat_called": bool(r.p_beat > 0.5),
+                 "beat_actual": bool(r.surprise > 0) if done else None,
+                 "move_1m": clean(r.move_1m_pct) if done else None, "won": won})
+streak = 0
+for row in reversed([x for x in rows if x["won"] is not None]):
+    if not row["won"]:
+        break
+    streak += 1
+live = {"wins": wins, "losses": losses, "streak": streak, "rows": rows[::-1]}
+
 stats = {
     "updated": str(date.today()),
     "next_release": str(nxt["release_date"].iloc[0].date()) if len(nxt) else None,
@@ -44,6 +82,7 @@ stats = {
     "p_buy": clean(lean["p_buy"]),
     "buckets": buckets,
     "history": history,
+    "live": live,
 }
 
 with open("nfp_stats.json", "w") as f:
