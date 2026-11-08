@@ -1,9 +1,8 @@
 # export_stats.py  -- runs on your PC, turns the CSVs into nfp_stats.json for the phone app
 # Run after every NFP (once you've updated nfp_consensus.csv and rerun nfp_gold_dukascopy.py),
 # then copy nfp_stats.json into the Flutter project's assets folder and rebuild.
-import os
+import json, math, os
 import pandas as pd
-import json, math
 from datetime import date
 from nfp_logic import load_reactions, load_calendar, pre_release_lean, BUCKETS
 
@@ -32,10 +31,30 @@ for lo, hi, label in BUCKETS:
         "avg_5m": clean(g.move_5m_pct.mean()),
     })
 
-recent = rx.sort_values("release_date").tail(12).iloc[::-1]
-history = [{"date": str(r.release_date.date()), "actual": clean(r.actual),
-            "forecast": clean(r.forecast), "surprise": clean(r.surprise),
-            "move_1m": clean(r.move_1m_pct)} for r in recent.itertuples()]
+# ---- Track record: the app's call is SELL on a beat, BUY on a miss ----
+called = rx[rx.surprise != 0].copy()
+called["call"] = called["surprise"].apply(lambda s: "SELL" if s > 0 else "BUY")
+called["won_1m"] = called["call"] == called["dir_1m"]
+called["won_5m"] = called["call"] == called["dir_5m"]
+lean_side = "BUY" if lean["p_buy"] >= 0.5 else "SELL"
+track = {
+    "n": int(len(called)),
+    "win_1m": clean(called["won_1m"].mean()),
+    "win_5m": clean(called["won_5m"].mean()),
+    "wins_1m": int(called["won_1m"].sum()),
+    "lean_side": lean_side,
+    "lean_win": clean((rx["dir_1m"] == lean_side).mean()),
+    "since": str(rx["release_date"].min().date()),
+}
+
+recent = rx.sort_values("release_date").iloc[::-1]
+history = []
+for r in recent.itertuples():
+    call = None if r.surprise == 0 else ("SELL" if r.surprise > 0 else "BUY")
+    history.append({"date": str(r.release_date.date()), "actual": clean(r.actual),
+                    "forecast": clean(r.forecast), "surprise": clean(r.surprise),
+                    "move_1m": clean(r.move_1m_pct), "call": call,
+                    "won": None if call is None else bool(call == r.dir_1m)})
 
 # ---- Live scoreboard: predictions saved BEFORE each release, scored after ----
 LIVE = "predictions.csv"
@@ -82,6 +101,7 @@ stats = {
     "p_beat": clean(lean["p_beat"]),
     "p_buy": clean(lean["p_buy"]),
     "buckets": buckets,
+    "track": track,
     "history": history,
     "live": live,
 }
