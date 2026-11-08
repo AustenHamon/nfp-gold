@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-05",
-  "next_release": "2026-11-06",
-  "next_forecast": 63.0,
-  "releases": 137,
-  "p_beat": 0.5786,
-  "p_buy": 0.4498,
+  "updated": "2026-11-08",
+  "next_release": null,
+  "next_forecast": null,
+  "releases": 138,
+  "p_beat": 0.5816,
+  "p_buy": 0.4466,
   "buckets": [
     {
       "label": "Big miss",
@@ -40,14 +40,21 @@
       "label": "Big beat",
       "lo": 75,
       "hi": null,
-      "n": 33,
-      "p_buy_1m": 0.1818,
-      "p_buy_5m": 0.2424,
-      "avg_1m": -0.3498,
-      "avg_5m": -0.3375
+      "n": 34,
+      "p_buy_1m": 0.1765,
+      "p_buy_5m": 0.2353,
+      "avg_1m": -0.3547,
+      "avg_5m": -0.3347
     }
   ],
   "history": [
+    {
+      "date": "2026-11-06",
+      "actual": 165.0,
+      "forecast": 63.0,
+      "surprise": 102.0,
+      "move_1m": -0.518
+    },
     {
       "date": "2026-10-02",
       "actual": 29.0,
@@ -124,13 +131,6 @@
       "forecast": 53.0,
       "surprise": 66.0,
       "move_1m": -0.097
-    },
-    {
-      "date": "2025-09-05",
-      "actual": 22.0,
-      "forecast": 75.0,
-      "surprise": -53.0,
-      "move_1m": 0.543
     }
   ]
 }
