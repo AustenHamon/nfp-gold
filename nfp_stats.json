@@ -47,90 +47,1274 @@
       "avg_5m": -0.3347
     }
   ],
+  "track": {
+    "n": 137,
+    "win_1m": 0.781,
+    "win_5m": 0.7372,
+    "wins_1m": 107,
+    "lean_side": "SELL",
+    "lean_win": 0.5507,
+    "since": "2015-01-09"
+  },
   "history": [
     {
       "date": "2026-11-06",
       "actual": 165.0,
       "forecast": 63.0,
       "surprise": 102.0,
-      "move_1m": -0.518
+      "move_1m": -0.518,
+      "call": "SELL",
+      "won": true
     },
     {
       "date": "2026-10-02",
       "actual": 29.0,
       "forecast": 89.0,
       "surprise": -60.0,
-      "move_1m": 0.666
+      "move_1m": 0.666,
+      "call": "BUY",
+      "won": true
     },
     {
       "date": "2026-09-04",
       "actual": 162.0,
       "forecast": 55.0,
       "surprise": 107.0,
-      "move_1m": -1.572
+      "move_1m": -1.572,
+      "call": "SELL",
+      "won": true
     },
     {
       "date": "2026-08-07",
       "actual": -23.0,
       "forecast": 85.0,
       "surprise": -108.0,
-      "move_1m": 1.002
+      "move_1m": 1.002,
+      "call": "BUY",
+      "won": true
     },
     {
       "date": "2026-07-02",
       "actual": 57.0,
       "forecast": 114.0,
       "surprise": -57.0,
-      "move_1m": 1.282
+      "move_1m": 1.282,
+      "call": "BUY",
+      "won": true
     },
     {
       "date": "2026-06-05",
       "actual": 172.0,
       "forecast": 85.0,
       "surprise": 87.0,
-      "move_1m": -0.33
+      "move_1m": -0.33,
+      "call": "SELL",
+      "won": true
     },
     {
       "date": "2026-05-08",
       "actual": 115.0,
       "forecast": 65.0,
       "surprise": 50.0,
-      "move_1m": -0.047
+      "move_1m": -0.047,
+      "call": "SELL",
+      "won": true
     },
     {
       "date": "2026-03-06",
       "actual": -92.0,
       "forecast": 58.0,
       "surprise": -150.0,
-      "move_1m": 0.707
+      "move_1m": 0.707,
+      "call": "BUY",
+      "won": true
     },
     {
       "date": "2026-02-11",
       "actual": 130.0,
       "forecast": 66.0,
       "surprise": 64.0,
-      "move_1m": -1.18
+      "move_1m": -1.18,
+      "call": "SELL",
+      "won": true
     },
     {
       "date": "2026-01-09",
       "actual": 50.0,
       "forecast": 66.0,
       "surprise": -16.0,
-      "move_1m": -0.05
+      "move_1m": -0.05,
+      "call": "BUY",
+      "won": false
     },
     {
       "date": "2025-12-16",
       "actual": 64.0,
       "forecast": 51.0,
       "surprise": 13.0,
-      "move_1m": 0.103
+      "move_1m": 0.103,
+      "call": "SELL",
+      "won": false
     },
     {
       "date": "2025-11-20",
       "actual": 119.0,
       "forecast": 53.0,
       "surprise": 66.0,
-      "move_1m": -0.097
+      "move_1m": -0.097,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2025-09-05",
+      "actual": 22.0,
+      "forecast": 75.0,
+      "surprise": -53.0,
+      "move_1m": 0.543,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2025-08-01",
+      "actual": 73.0,
+      "forecast": 106.0,
+      "surprise": -33.0,
+      "move_1m": 0.331,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2025-07-03",
+      "actual": 147.0,
+      "forecast": 111.0,
+      "surprise": 36.0,
+      "move_1m": -0.399,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2025-06-06",
+      "actual": 139.0,
+      "forecast": 126.0,
+      "surprise": 13.0,
+      "move_1m": -0.247,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2025-05-02",
+      "actual": 177.0,
+      "forecast": 138.0,
+      "surprise": 39.0,
+      "move_1m": -0.247,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2025-04-04",
+      "actual": 228.0,
+      "forecast": 137.0,
+      "surprise": 91.0,
+      "move_1m": 0.04,
+      "call": "SELL",
+      "won": false
+    },
+    {
+      "date": "2025-03-07",
+      "actual": 151.0,
+      "forecast": 159.0,
+      "surprise": -8.0,
+      "move_1m": 0.235,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2025-02-07",
+      "actual": 143.0,
+      "forecast": 169.0,
+      "surprise": -26.0,
+      "move_1m": -0.031,
+      "call": "BUY",
+      "won": false
+    },
+    {
+      "date": "2025-01-10",
+      "actual": 256.0,
+      "forecast": 164.0,
+      "surprise": 92.0,
+      "move_1m": -0.285,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2024-12-06",
+      "actual": 227.0,
+      "forecast": 202.0,
+      "surprise": 25.0,
+      "move_1m": 0.096,
+      "call": "SELL",
+      "won": false
+    },
+    {
+      "date": "2024-11-01",
+      "actual": 12.0,
+      "forecast": 106.0,
+      "surprise": -94.0,
+      "move_1m": 0.232,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2024-10-04",
+      "actual": 254.0,
+      "forecast": 147.0,
+      "surprise": 107.0,
+      "move_1m": -0.591,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2024-09-06",
+      "actual": 142.0,
+      "forecast": 164.0,
+      "surprise": -22.0,
+      "move_1m": 0.271,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2024-08-02",
+      "actual": 114.0,
+      "forecast": 176.0,
+      "surprise": -62.0,
+      "move_1m": 0.696,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2024-07-05",
+      "actual": 206.0,
+      "forecast": 191.0,
+      "surprise": 15.0,
+      "move_1m": -0.164,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2024-06-07",
+      "actual": 272.0,
+      "forecast": 182.0,
+      "surprise": 90.0,
+      "move_1m": -0.798,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2024-05-03",
+      "actual": 175.0,
+      "forecast": 238.0,
+      "surprise": -63.0,
+      "move_1m": 1.007,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2024-04-05",
+      "actual": 303.0,
+      "forecast": 212.0,
+      "surprise": 91.0,
+      "move_1m": -0.572,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2024-03-08",
+      "actual": 275.0,
+      "forecast": 198.0,
+      "surprise": 77.0,
+      "move_1m": 0.328,
+      "call": "SELL",
+      "won": false
+    },
+    {
+      "date": "2024-02-02",
+      "actual": 353.0,
+      "forecast": 187.0,
+      "surprise": 166.0,
+      "move_1m": -0.544,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2024-01-05",
+      "actual": 216.0,
+      "forecast": 170.0,
+      "surprise": 46.0,
+      "move_1m": -0.562,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2023-12-08",
+      "actual": 199.0,
+      "forecast": 180.0,
+      "surprise": 19.0,
+      "move_1m": -0.482,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2023-11-03",
+      "actual": 150.0,
+      "forecast": 180.0,
+      "surprise": -30.0,
+      "move_1m": 0.363,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2023-10-06",
+      "actual": 336.0,
+      "forecast": 170.0,
+      "surprise": 166.0,
+      "move_1m": -0.255,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2023-09-01",
+      "actual": 187.0,
+      "forecast": 170.0,
+      "surprise": 17.0,
+      "move_1m": 0.287,
+      "call": "SELL",
+      "won": false
+    },
+    {
+      "date": "2023-08-04",
+      "actual": 187.0,
+      "forecast": 200.0,
+      "surprise": -13.0,
+      "move_1m": 0.165,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2023-07-07",
+      "actual": 209.0,
+      "forecast": 225.0,
+      "surprise": -16.0,
+      "move_1m": -0.006,
+      "call": "BUY",
+      "won": false
+    },
+    {
+      "date": "2023-06-02",
+      "actual": 339.0,
+      "forecast": 180.0,
+      "surprise": 159.0,
+      "move_1m": -0.158,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2023-05-05",
+      "actual": 253.0,
+      "forecast": 180.0,
+      "surprise": 73.0,
+      "move_1m": -0.458,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2023-03-10",
+      "actual": 311.0,
+      "forecast": 205.0,
+      "surprise": 106.0,
+      "move_1m": 0.293,
+      "call": "SELL",
+      "won": false
+    },
+    {
+      "date": "2023-02-03",
+      "actual": 517.0,
+      "forecast": 185.0,
+      "surprise": 332.0,
+      "move_1m": -0.535,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2023-01-06",
+      "actual": 223.0,
+      "forecast": 200.0,
+      "surprise": 23.0,
+      "move_1m": 0.106,
+      "call": "SELL",
+      "won": false
+    },
+    {
+      "date": "2022-12-02",
+      "actual": 263.0,
+      "forecast": 200.0,
+      "surprise": 63.0,
+      "move_1m": -0.701,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2022-11-04",
+      "actual": 261.0,
+      "forecast": 200.0,
+      "surprise": 61.0,
+      "move_1m": -0.148,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2022-10-07",
+      "actual": 263.0,
+      "forecast": 250.0,
+      "surprise": 13.0,
+      "move_1m": -0.257,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2022-09-02",
+      "actual": 315.0,
+      "forecast": 300.0,
+      "surprise": 15.0,
+      "move_1m": 0.331,
+      "call": "SELL",
+      "won": false
+    },
+    {
+      "date": "2022-08-05",
+      "actual": 528.0,
+      "forecast": 250.0,
+      "surprise": 278.0,
+      "move_1m": -0.549,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2022-07-08",
+      "actual": 372.0,
+      "forecast": 268.0,
+      "surprise": 104.0,
+      "move_1m": -0.373,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2022-06-03",
+      "actual": 390.0,
+      "forecast": 325.0,
+      "surprise": 65.0,
+      "move_1m": 0.031,
+      "call": "SELL",
+      "won": false
+    },
+    {
+      "date": "2022-05-06",
+      "actual": 428.0,
+      "forecast": 391.0,
+      "surprise": 37.0,
+      "move_1m": 0.19,
+      "call": "SELL",
+      "won": false
+    },
+    {
+      "date": "2022-04-01",
+      "actual": 431.0,
+      "forecast": 490.0,
+      "surprise": -59.0,
+      "move_1m": -0.057,
+      "call": "BUY",
+      "won": false
+    },
+    {
+      "date": "2022-03-04",
+      "actual": 678.0,
+      "forecast": 400.0,
+      "surprise": 278.0,
+      "move_1m": 0.017,
+      "call": "SELL",
+      "won": false
+    },
+    {
+      "date": "2022-02-04",
+      "actual": 467.0,
+      "forecast": 150.0,
+      "surprise": 317.0,
+      "move_1m": -0.325,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2022-01-07",
+      "actual": 199.0,
+      "forecast": 400.0,
+      "surprise": -201.0,
+      "move_1m": 0.247,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2021-12-03",
+      "actual": 210.0,
+      "forecast": 550.0,
+      "surprise": -340.0,
+      "move_1m": 0.41,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2021-11-05",
+      "actual": 531.0,
+      "forecast": 450.0,
+      "surprise": 81.0,
+      "move_1m": -0.171,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2021-10-08",
+      "actual": 194.0,
+      "forecast": 500.0,
+      "surprise": -306.0,
+      "move_1m": 0.335,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2021-09-03",
+      "actual": 235.0,
+      "forecast": 750.0,
+      "surprise": -515.0,
+      "move_1m": 0.455,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2021-08-06",
+      "actual": 943.0,
+      "forecast": 870.0,
+      "surprise": 73.0,
+      "move_1m": -0.522,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2021-07-02",
+      "actual": 850.0,
+      "forecast": 700.0,
+      "surprise": 150.0,
+      "move_1m": -0.151,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2021-06-04",
+      "actual": 559.0,
+      "forecast": 650.0,
+      "surprise": -91.0,
+      "move_1m": 0.471,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2021-05-07",
+      "actual": 266.0,
+      "forecast": 978.0,
+      "surprise": -712.0,
+      "move_1m": 0.509,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2021-03-05",
+      "actual": 379.0,
+      "forecast": 182.0,
+      "surprise": 197.0,
+      "move_1m": -0.329,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2021-02-05",
+      "actual": 49.0,
+      "forecast": 50.0,
+      "surprise": -1.0,
+      "move_1m": 0.313,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2021-01-08",
+      "actual": -140.0,
+      "forecast": 71.0,
+      "surprise": -211.0,
+      "move_1m": -0.096,
+      "call": "BUY",
+      "won": false
+    },
+    {
+      "date": "2020-12-04",
+      "actual": 245.0,
+      "forecast": 469.0,
+      "surprise": -224.0,
+      "move_1m": 0.247,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2020-11-06",
+      "actual": 638.0,
+      "forecast": 600.0,
+      "surprise": 38.0,
+      "move_1m": -0.112,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2020-10-02",
+      "actual": 661.0,
+      "forecast": 850.0,
+      "surprise": -189.0,
+      "move_1m": -0.029,
+      "call": "BUY",
+      "won": false
+    },
+    {
+      "date": "2020-09-04",
+      "actual": 1371.0,
+      "forecast": 1400.0,
+      "surprise": -29.0,
+      "move_1m": -0.221,
+      "call": "BUY",
+      "won": false
+    },
+    {
+      "date": "2020-08-07",
+      "actual": 1763.0,
+      "forecast": 1600.0,
+      "surprise": 163.0,
+      "move_1m": -0.126,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2020-07-02",
+      "actual": 4800.0,
+      "forecast": 3000.0,
+      "surprise": 1800.0,
+      "move_1m": -0.056,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2020-06-05",
+      "actual": 2509.0,
+      "forecast": -8000.0,
+      "surprise": 10509.0,
+      "move_1m": -0.395,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2020-05-08",
+      "actual": -20537.0,
+      "forecast": -22000.0,
+      "surprise": 1463.0,
+      "move_1m": -0.102,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2020-04-03",
+      "actual": -701.0,
+      "forecast": -100.0,
+      "surprise": -601.0,
+      "move_1m": 0.041,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2020-03-06",
+      "actual": 273.0,
+      "forecast": 175.0,
+      "surprise": 98.0,
+      "move_1m": 0.067,
+      "call": "SELL",
+      "won": false
+    },
+    {
+      "date": "2020-02-07",
+      "actual": 225.0,
+      "forecast": 160.0,
+      "surprise": 65.0,
+      "move_1m": -0.17,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2020-01-10",
+      "actual": 145.0,
+      "forecast": 164.0,
+      "surprise": -19.0,
+      "move_1m": 0.33,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2019-12-06",
+      "actual": 266.0,
+      "forecast": 186.0,
+      "surprise": 80.0,
+      "move_1m": -0.685,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2019-11-01",
+      "actual": 128.0,
+      "forecast": 89.0,
+      "surprise": 39.0,
+      "move_1m": -0.372,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2019-10-04",
+      "actual": 136.0,
+      "forecast": 140.0,
+      "surprise": -4.0,
+      "move_1m": -0.1,
+      "call": "BUY",
+      "won": false
+    },
+    {
+      "date": "2019-09-06",
+      "actual": 130.0,
+      "forecast": 160.0,
+      "surprise": -30.0,
+      "move_1m": 0.389,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2019-08-02",
+      "actual": 164.0,
+      "forecast": 164.0,
+      "surprise": 0.0,
+      "move_1m": 0.11,
+      "call": null,
+      "won": null
+    },
+    {
+      "date": "2019-07-05",
+      "actual": 224.0,
+      "forecast": 160.0,
+      "surprise": 64.0,
+      "move_1m": -0.634,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2019-06-07",
+      "actual": 75.0,
+      "forecast": 185.0,
+      "surprise": -110.0,
+      "move_1m": 0.329,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2019-05-03",
+      "actual": 263.0,
+      "forecast": 181.0,
+      "surprise": 82.0,
+      "move_1m": -0.143,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2019-04-05",
+      "actual": 196.0,
+      "forecast": 175.0,
+      "surprise": 21.0,
+      "move_1m": -0.104,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2019-03-08",
+      "actual": 20.0,
+      "forecast": 181.0,
+      "surprise": -161.0,
+      "move_1m": 0.425,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2019-02-01",
+      "actual": 304.0,
+      "forecast": 165.0,
+      "surprise": 139.0,
+      "move_1m": -0.074,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2019-01-04",
+      "actual": 312.0,
+      "forecast": 178.0,
+      "surprise": 134.0,
+      "move_1m": -0.274,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2018-12-07",
+      "actual": 155.0,
+      "forecast": 200.0,
+      "surprise": -45.0,
+      "move_1m": 0.223,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2018-11-02",
+      "actual": 250.0,
+      "forecast": 193.0,
+      "surprise": 57.0,
+      "move_1m": -0.136,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2018-10-05",
+      "actual": 134.0,
+      "forecast": 185.0,
+      "surprise": -51.0,
+      "move_1m": 0.157,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2018-09-07",
+      "actual": 201.0,
+      "forecast": 191.0,
+      "surprise": 10.0,
+      "move_1m": -0.196,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2018-08-03",
+      "actual": 157.0,
+      "forecast": 193.0,
+      "surprise": -36.0,
+      "move_1m": 0.126,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2018-07-06",
+      "actual": 213.0,
+      "forecast": 200.0,
+      "surprise": 13.0,
+      "move_1m": -0.015,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2018-06-01",
+      "actual": 223.0,
+      "forecast": 189.0,
+      "surprise": 34.0,
+      "move_1m": -0.337,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2018-05-04",
+      "actual": 164.0,
+      "forecast": 189.0,
+      "surprise": -25.0,
+      "move_1m": 0.327,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2018-04-06",
+      "actual": 103.0,
+      "forecast": 193.0,
+      "surprise": -90.0,
+      "move_1m": 0.632,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2018-03-09",
+      "actual": 313.0,
+      "forecast": 200.0,
+      "surprise": 113.0,
+      "move_1m": 0.049,
+      "call": "SELL",
+      "won": false
+    },
+    {
+      "date": "2018-02-02",
+      "actual": 200.0,
+      "forecast": 184.0,
+      "surprise": 16.0,
+      "move_1m": -0.383,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2018-01-05",
+      "actual": 148.0,
+      "forecast": 190.0,
+      "surprise": -42.0,
+      "move_1m": 0.321,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2017-12-08",
+      "actual": 228.0,
+      "forecast": 200.0,
+      "surprise": 28.0,
+      "move_1m": 0.131,
+      "call": "SELL",
+      "won": false
+    },
+    {
+      "date": "2017-11-03",
+      "actual": 261.0,
+      "forecast": 310.0,
+      "surprise": -49.0,
+      "move_1m": 0.185,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2017-10-06",
+      "actual": -33.0,
+      "forecast": 90.0,
+      "surprise": -123.0,
+      "move_1m": -0.158,
+      "call": "BUY",
+      "won": false
+    },
+    {
+      "date": "2017-09-01",
+      "actual": 156.0,
+      "forecast": 180.0,
+      "surprise": -24.0,
+      "move_1m": 0.568,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2017-08-04",
+      "actual": 209.0,
+      "forecast": 183.0,
+      "surprise": 26.0,
+      "move_1m": -0.502,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2017-07-07",
+      "actual": 222.0,
+      "forecast": 179.0,
+      "surprise": 43.0,
+      "move_1m": -0.181,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2017-06-02",
+      "actual": 138.0,
+      "forecast": 185.0,
+      "surprise": -47.0,
+      "move_1m": 0.294,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2017-05-05",
+      "actual": 211.0,
+      "forecast": 185.0,
+      "surprise": 26.0,
+      "move_1m": -0.246,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2017-04-07",
+      "actual": 98.0,
+      "forecast": 180.0,
+      "surprise": -82.0,
+      "move_1m": 0.539,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2017-03-10",
+      "actual": 235.0,
+      "forecast": 200.0,
+      "surprise": 35.0,
+      "move_1m": -0.126,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2017-02-03",
+      "actual": 227.0,
+      "forecast": 175.0,
+      "surprise": 52.0,
+      "move_1m": 0.322,
+      "call": "SELL",
+      "won": false
+    },
+    {
+      "date": "2017-01-06",
+      "actual": 156.0,
+      "forecast": 178.0,
+      "surprise": -22.0,
+      "move_1m": -0.085,
+      "call": "BUY",
+      "won": false
+    },
+    {
+      "date": "2016-12-02",
+      "actual": 178.0,
+      "forecast": 175.0,
+      "surprise": 3.0,
+      "move_1m": -0.063,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2016-11-04",
+      "actual": 161.0,
+      "forecast": 175.0,
+      "surprise": -14.0,
+      "move_1m": -0.055,
+      "call": "BUY",
+      "won": false
+    },
+    {
+      "date": "2016-10-07",
+      "actual": 156.0,
+      "forecast": 175.0,
+      "surprise": -19.0,
+      "move_1m": 0.279,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2016-09-02",
+      "actual": 151.0,
+      "forecast": 180.0,
+      "surprise": -29.0,
+      "move_1m": 1.38,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2016-08-05",
+      "actual": 255.0,
+      "forecast": 180.0,
+      "surprise": 75.0,
+      "move_1m": -0.321,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2016-07-08",
+      "actual": 287.0,
+      "forecast": 175.0,
+      "surprise": 112.0,
+      "move_1m": -1.352,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2016-06-03",
+      "actual": 38.0,
+      "forecast": 164.0,
+      "surprise": -126.0,
+      "move_1m": 0.878,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2016-05-06",
+      "actual": 160.0,
+      "forecast": 202.0,
+      "surprise": -42.0,
+      "move_1m": 0.466,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2016-04-01",
+      "actual": 215.0,
+      "forecast": 205.0,
+      "surprise": 10.0,
+      "move_1m": -0.384,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2016-03-04",
+      "actual": 242.0,
+      "forecast": 190.0,
+      "surprise": 52.0,
+      "move_1m": -0.346,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2016-02-05",
+      "actual": 151.0,
+      "forecast": 190.0,
+      "surprise": -39.0,
+      "move_1m": 0.003,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2016-01-08",
+      "actual": 292.0,
+      "forecast": 200.0,
+      "surprise": 92.0,
+      "move_1m": -0.21,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2015-12-04",
+      "actual": 211.0,
+      "forecast": 200.0,
+      "surprise": 11.0,
+      "move_1m": -0.372,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2015-11-06",
+      "actual": 271.0,
+      "forecast": 180.0,
+      "surprise": 91.0,
+      "move_1m": -1.382,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2015-10-02",
+      "actual": 142.0,
+      "forecast": 203.0,
+      "surprise": -61.0,
+      "move_1m": 0.839,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2015-09-04",
+      "actual": 173.0,
+      "forecast": 220.0,
+      "surprise": -47.0,
+      "move_1m": 0.314,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2015-08-07",
+      "actual": 215.0,
+      "forecast": 223.0,
+      "surprise": -8.0,
+      "move_1m": -0.402,
+      "call": "BUY",
+      "won": false
+    },
+    {
+      "date": "2015-07-02",
+      "actual": 223.0,
+      "forecast": 230.0,
+      "surprise": -7.0,
+      "move_1m": 0.261,
+      "call": "BUY",
+      "won": true
+    },
+    {
+      "date": "2015-06-05",
+      "actual": 280.0,
+      "forecast": 225.0,
+      "surprise": 55.0,
+      "move_1m": -0.604,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2015-05-08",
+      "actual": 223.0,
+      "forecast": 224.0,
+      "surprise": -1.0,
+      "move_1m": -0.08,
+      "call": "BUY",
+      "won": false
+    },
+    {
+      "date": "2015-03-06",
+      "actual": 295.0,
+      "forecast": 240.0,
+      "surprise": 55.0,
+      "move_1m": 0.014,
+      "call": "SELL",
+      "won": false
+    },
+    {
+      "date": "2015-02-06",
+      "actual": 257.0,
+      "forecast": 234.0,
+      "surprise": 23.0,
+      "move_1m": -0.672,
+      "call": "SELL",
+      "won": true
+    },
+    {
+      "date": "2015-01-09",
+      "actual": 252.0,
+      "forecast": 240.0,
+      "surprise": 12.0,
+      "move_1m": 0.387,
+      "call": "SELL",
+      "won": false
     }
-  ]
+  ],
+  "live": {
+    "wins": 1,
+    "losses": 0,
+    "streak": 1,
+    "rows": [
+      {
+        "date": "2026-11-06",
+        "call": "SELL",
+        "p_beat": 0.5786,
+        "forecast": 63.0,
+        "beat_called": true,
+        "beat_actual": true,
+        "move_1m": -0.518,
+        "won": true
+      }
+    ]
+  }
 }
