@@ -2,6 +2,7 @@
 # Run after every NFP (once you've updated nfp_consensus.csv and rerun nfp_gold_dukascopy.py),
 # then copy nfp_stats.json into the Flutter project's assets folder and rebuild.
 import os
+import pandas as pd
 import json, math
 from datetime import date
 from nfp_logic import load_reactions, load_calendar, pre_release_lean, BUCKETS
