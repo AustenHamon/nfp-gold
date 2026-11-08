@@ -10,7 +10,7 @@ today = pd.Timestamp.today().normalize()
 # Fill in the actual for any past release that's still blank, straight from FRED
 for i, r in cal[cal["actual"].isna() & (cal["release_date"] <= today)].iterrows():
     s = fred.get_series_as_of_date("PAYEMS", r.release_date.strftime("%Y-%m-%d"))
-    s = s.sort_values("date").drop_duplicates("date", keep="last")
+    s = s.sort_values(["date", "realtime_start"]).drop_duplicates("date", keep="last")
     if len(s) >= 2:
         cal.loc[i, "actual"] = float(s["value"].iloc[-1] - s["value"].iloc[-2])
         print(f"{r.release_date.date()}: actual = {cal.loc[i, 'actual']:.0f}K")

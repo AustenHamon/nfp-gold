@@ -16,7 +16,7 @@ jobs:
       - run: pip install pandas fredapi tzdata
       - run: python update_pipeline.py
         env:
-          FRED_API_KEY: ${{ secrets.b3935149b33724831582541f8f482663 }}
+            FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
       - run: |
           git config user.name "nfp-bot"
           git config user.email "bot@users.noreply.github.com"
