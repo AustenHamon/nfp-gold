@@ -47,6 +47,18 @@ track = {
     "since": str(rx["release_date"].min().date()),
 }
 
+# ---- Signal strength: how reliable the call is by size of surprise ----
+TIERS = [(0, 20, "skip", "Too close to call"),
+         (20, 40, "weak", "Weak signal"),
+         (40, None, "strong", "Strong signal")]
+called["abs_surprise"] = called["surprise"].abs()
+tiers = []
+for lo, hi, key, label in TIERS:
+    g = called[(called.abs_surprise > lo) & ((called.abs_surprise <= hi) if hi else True)]
+    tiers.append({"key": key, "label": label, "lo": lo, "hi": hi, "n": int(len(g)),
+                  "win": clean(g["won_1m"].mean(), 0.5),
+                  "avg_move": clean(g["move_1m_pct"].abs().mean())})
+
 recent = rx.sort_values("release_date").iloc[::-1]
 history = []
 for r in recent.itertuples():
@@ -102,6 +114,7 @@ stats = {
     "p_buy": clean(lean["p_buy"]),
     "buckets": buckets,
     "track": track,
+    "tiers": tiers,
     "history": history,
     "live": live,
 }
