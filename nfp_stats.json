@@ -1,13 +1,22 @@
 {
-  "updated": "2026-11-08",
+  "event": "nfp",
+  "title": "NFP",
+  "unit": "K",
+  "decimals": 0,
+  "up_word": "Beat",
+  "down_word": "Miss",
+  "call_rule": "The call is sell on a beat and buy on a miss",
+  "lean_note": "Since 2015, NFP beat the forecast in 58% of releases and missed it in 41%. The lean lands slightly on sell.",
+  "updated": "2026-11-10",
   "next_release": null,
   "next_forecast": null,
   "releases": 138,
-  "p_beat": 0.5816,
-  "p_buy": 0.4466,
+  "p_beat": 0.5797,
+  "p_buy": 0.4493,
   "buckets": [
     {
       "label": "Big miss",
+      "desc": "Missed by 75K or more",
       "lo": null,
       "hi": -75,
       "n": 19,
@@ -18,6 +27,7 @@
     },
     {
       "label": "Small miss",
+      "desc": "Missed by up to 75K",
       "lo": -75,
       "hi": 0,
       "n": 39,
@@ -28,6 +38,7 @@
     },
     {
       "label": "Small beat",
+      "desc": "Beat by up to 75K",
       "lo": 0,
       "hi": 75,
       "n": 46,
@@ -38,6 +49,7 @@
     },
     {
       "label": "Big beat",
+      "desc": "Beat by more than 75K",
       "lo": 75,
       "hi": null,
       "n": 34,
@@ -47,28 +59,21 @@
       "avg_5m": -0.3347
     }
   ],
-  "track": {
-    "n": 137,
-    "win_1m": 0.781,
-    "win_5m": 0.7372,
-    "wins_1m": 107,
-    "lean_side": "SELL",
-    "lean_win": 0.5507,
-    "since": "2015-01-09"
-  },
   "tiers": [
     {
       "key": "skip",
       "label": "Too close to call",
+      "when": "With a surprise under 20K",
       "lo": 0,
       "hi": 20,
-      "n": 26,
-      "win": 0.6154,
-      "avg_move": 0.2287
+      "n": 27,
+      "win": 0.6296,
+      "avg_move": 0.2243
     },
     {
       "key": "weak",
       "label": "Weak signal",
+      "when": "With a surprise of 20K to 40K",
       "lo": 20,
       "hi": 40,
       "n": 26,
@@ -78,6 +83,7 @@
     {
       "key": "strong",
       "label": "Strong signal",
+      "when": "With a surprise over 40K",
       "lo": 40,
       "hi": null,
       "n": 85,
@@ -85,6 +91,15 @@
       "avg_move": 0.4108
     }
   ],
+  "track": {
+    "n": 137,
+    "wins_1m": 107,
+    "win_1m": 0.781,
+    "win_5m": 0.7372,
+    "lean_side": "SELL",
+    "lean_win": 0.5507,
+    "since": "2015-01-09"
+  },
   "history": [
     {
       "date": "2026-11-06",
@@ -839,8 +854,8 @@
       "forecast": 164.0,
       "surprise": 0.0,
       "move_1m": 0.11,
-      "call": null,
-      "won": null
+      "call": NaN,
+      "won": false
     },
     {
       "date": "2019-07-05",
@@ -1339,8 +1354,6 @@
         "call": "SELL",
         "p_beat": 0.5786,
         "forecast": 63.0,
-        "beat_called": true,
-        "beat_actual": true,
         "move_1m": -0.518,
         "won": true
       }
