@@ -118,11 +118,13 @@ def export(key):
         lo = hi
 
     # ---- History (newest first) ----
-    history = [{"date": str(r.release_date.date()), "actual": clean(r.actual),
-                "forecast": clean(r.forecast), "surprise": clean(r.surprise),
-                "move_1m": clean(r.move_1m_pct), "call": r.call,
-                "won": None if r.call is None else bool(r.call == r.dir_1m)}
-               for r in rx.sort_values("release_date", ascending=False).itertuples()]
+    history = []
+    for r in rx.sort_values("release_date", ascending=False).itertuples():
+        call = r.call if isinstance(r.call, str) else None   # pandas turns None into NaN
+        history.append({"date": str(r.release_date.date()), "actual": clean(r.actual),
+                        "forecast": clean(r.forecast), "surprise": clean(r.surprise),
+                        "move_1m": clean(r.move_1m_pct), "call": call,
+                        "won": None if call is None else bool(call == r.dir_1m)})
 
     # ---- Live scoreboard: predictions saved BEFORE each release, scored after ----
     path = cfg["predictions"]
@@ -172,14 +174,14 @@ def export(key):
     }
 
     # Only rewrite the file when something besides the date changed (keeps git quiet)
-    new = json.loads(json.dumps(stats))
+    new = json.loads(json.dumps(stats, allow_nan=False))  # fails loudly instead of writing NaN
     if os.path.exists(cfg["out"]):
         old = json.load(open(cfg["out"]))
         if {k: v for k, v in old.items() if k != "updated"} == {k: v for k, v in new.items() if k != "updated"}:
             print(f"{key}: no change")
             return
     with open(cfg["out"], "w") as f:
-        json.dump(stats, f, indent=2)
+        json.dump(stats, f, indent=2, allow_nan=False)
     print(f"{key}: saved {cfg['out']} | next {stats['next_release']} | {cfg['up'].lower()} {p_up:.0%} | "
           f"gold BUY {p_buy:.0%} / SELL {1 - p_buy:.0%} | live {wins}W-{losses}L")
 
