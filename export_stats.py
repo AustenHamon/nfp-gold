@@ -30,6 +30,7 @@ EVENTS = {
         call_rule="The call is sell when core CPI comes in hotter than forecast and buy when it comes in cooler",
         calendar="cpi_consensus.csv", reactions="cpi_gold_m1.csv",
         predictions="cpi_predictions.csv", out="cpi_stats.json",
+        lean_rule="last_surprise",   # hot months tend to follow hot months
         buckets=[(-1e9, -0.15, "Much cooler", "Cooler by 0.2 or more"),
                  (-0.15, -0.05, "Cooler", "Cooler by 0.1"),
                  (-0.05, 0.05, "In line", "Matched the forecast"),
@@ -45,6 +46,24 @@ def clean(x, default=0.0):
     """JSON can't hold NaN, so swap it for a default."""
     x = float(x)
     return default if math.isnan(x) else round(x, 4)
+
+
+def side_of(x):
+    return "up" if x > 0 else ("down" if x < 0 else "flat")
+
+
+def lean_from(past_cal, past_rx, last):
+    """Chance of each outcome after a month like `last`, and the gold buy chance that follows."""
+    g = past_cal[past_cal["last"] == last]
+    if len(g) < 5:
+        g = past_cal
+    p = {k: (g["side"] == k).mean() for k in ("up", "flat", "down")}
+    sides = past_rx["surprise"].apply(side_of)
+    rate = {}
+    for k in p:
+        r = past_rx[sides == k]
+        rate[k] = (r["dir_1m"] == "BUY").mean() if len(r) else 0.5
+    return p, sum(p[k] * rate[k] for k in p)
 
 
 def export(key):
@@ -71,6 +90,41 @@ def export(key):
         note += f", with {p_flat:.0%} in line"
     note += f". The lean lands {'slightly ' if abs(p_buy - 0.5) < 0.1 else ''}on {lean_side}."
 
+    lean_desc, lean_win_rule = None, None
+    if cfg.get("lean_rule") == "last_surprise":
+        hist = cal.dropna(subset=["actual", "forecast"]).copy()
+        hist = hist[hist["release_date"] >= START]
+        hist["side"] = (hist["actual"] - hist["forecast"]).round(3).apply(side_of)
+        hist["last"] = hist["side"].shift(1)
+        hist = hist.dropna(subset=["last"])
+        word = {"up": cfg["up"].lower(), "flat": "in line", "down": cfg["down"].lower()}
+
+        # today's lean, from the most recent release
+        last = hist["side"].iloc[-1]
+        p, p_buy = lean_from(hist, rx, last)
+        p_up, p_flat, p_down = p["up"], p["flat"], p["down"]
+        lean_side = "buy" if p_buy >= 0.5 else "sell"
+        if_surprise = p_up / (p_up + p_down) if (p_up + p_down) else 0.5
+        lean_dir = cfg["up"].lower() if if_surprise >= 0.5 else cfg["down"].lower()
+        note = (f"Last month {cfg['title']} came in {word[last]}. Since 2015, after a month like that the next one "
+                f"came in {word['up']} {p_up:.0%}, in line {p_flat:.0%} and {word['down']} {p_down:.0%}. "
+                f"If it surprises, it's {max(if_surprise, 1 - if_surprise):.0%} likely to be {lean_dir}, "
+                f"so the lean lands on {lean_side}.")
+
+        # honest test: score each past release using only what was known before it
+        hits = calls = 0
+        for r in rx.itertuples():
+            past_cal = hist[hist["release_date"] < r.release_date]
+            past_rx = rx[rx["release_date"] < r.release_date]
+            if len(past_cal) < 24:
+                continue
+            _, pb = lean_from(past_cal, past_rx, past_cal["side"].iloc[-1])
+            calls += 1
+            hits += ("BUY" if pb >= 0.5 else "SELL") == r.dir_1m
+        lean_win_rule = hits / calls if calls else None
+        lean_desc = (f"right using last month's surprise, tested on {calls} releases "
+                     f"with only the data known before each one")
+
     # ---- Reaction by surprise bucket ----
     buckets = []
     for lo, hi, label, desc in cfg["buckets"]:
@@ -94,7 +148,9 @@ def export(key):
         "n": int(len(called)), "wins_1m": int(won_1m.sum()),
         "win_1m": clean(won_1m.mean()), "win_5m": clean(won_5m.mean()),
         "lean_side": lean_side.upper(),
-        "lean_win": clean((rx["dir_1m"] == lean_side.upper()).mean()),
+        "lean_win": clean(lean_win_rule if lean_win_rule is not None
+                          else (rx["dir_1m"] == lean_side.upper()).mean()),
+        "lean_desc": lean_desc,
         "since": str(rx["release_date"].min().date()),
     }
 
