@@ -854,8 +854,8 @@
       "forecast": 164.0,
       "surprise": 0.0,
       "move_1m": 0.11,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2019-07-05",

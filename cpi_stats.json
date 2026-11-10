@@ -126,8 +126,8 @@
       "forecast": 0.2,
       "surprise": 0.0,
       "move_1m": -0.755,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2026-07-14",
@@ -171,8 +171,8 @@
       "forecast": 0.2,
       "surprise": 0.0,
       "move_1m": -0.067,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2026-02-13",
@@ -180,8 +180,8 @@
       "forecast": 0.3,
       "surprise": 0.0,
       "move_1m": 0.555,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2026-01-13",
@@ -207,8 +207,8 @@
       "forecast": 0.3,
       "surprise": 0.0,
       "move_1m": 0.217,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2025-08-12",
@@ -216,8 +216,8 @@
       "forecast": 0.3,
       "surprise": 0.0,
       "move_1m": 0.297,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2025-07-15",
@@ -288,8 +288,8 @@
       "forecast": 0.3,
       "surprise": 0.0,
       "move_1m": 0.06,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2024-11-13",
@@ -297,8 +297,8 @@
       "forecast": 0.3,
       "surprise": 0.0,
       "move_1m": 0.351,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2024-10-10",
@@ -324,8 +324,8 @@
       "forecast": 0.2,
       "surprise": 0.0,
       "move_1m": 0.008,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2024-07-11",
@@ -351,8 +351,8 @@
       "forecast": 0.3,
       "surprise": 0.0,
       "move_1m": 0.535,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2024-04-10",
@@ -387,8 +387,8 @@
       "forecast": 0.3,
       "surprise": 0.0,
       "move_1m": -0.414,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2023-12-12",
@@ -396,8 +396,8 @@
       "forecast": 0.3,
       "surprise": 0.0,
       "move_1m": 0.232,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2023-11-14",
@@ -414,8 +414,8 @@
       "forecast": 0.3,
       "surprise": 0.0,
       "move_1m": -0.109,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2023-09-13",
@@ -432,8 +432,8 @@
       "forecast": 0.2,
       "surprise": 0.0,
       "move_1m": 0.228,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2023-07-12",
@@ -450,8 +450,8 @@
       "forecast": 0.4,
       "surprise": 0.0,
       "move_1m": 0.369,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2023-05-10",
@@ -459,8 +459,8 @@
       "forecast": 0.4,
       "surprise": 0.0,
       "move_1m": 0.401,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2023-04-12",
@@ -468,8 +468,8 @@
       "forecast": 0.4,
       "surprise": 0.0,
       "move_1m": 0.546,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2023-03-14",
@@ -486,8 +486,8 @@
       "forecast": 0.4,
       "surprise": 0.0,
       "move_1m": -0.491,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2023-01-12",
@@ -495,8 +495,8 @@
       "forecast": 0.3,
       "surprise": 0.0,
       "move_1m": -0.11,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2022-12-13",
@@ -585,8 +585,8 @@
       "forecast": 0.5,
       "surprise": 0.0,
       "move_1m": 0.061,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2022-02-10",
@@ -612,8 +612,8 @@
       "forecast": 0.5,
       "surprise": 0.0,
       "move_1m": 0.029,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2021-11-10",
@@ -630,8 +630,8 @@
       "forecast": 0.2,
       "surprise": 0.0,
       "move_1m": 0.027,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2021-09-14",
@@ -711,8 +711,8 @@
       "forecast": 0.1,
       "surprise": 0.0,
       "move_1m": 0.15,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2020-12-10",
@@ -738,8 +738,8 @@
       "forecast": 0.2,
       "surprise": 0.0,
       "move_1m": 0.037,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2020-09-11",
@@ -765,8 +765,8 @@
       "forecast": -0.1,
       "surprise": 0.0,
       "move_1m": -0.031,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2020-05-12",
@@ -783,8 +783,8 @@
       "forecast": 0.2,
       "surprise": 0.0,
       "move_1m": -0.035,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2020-02-13",
@@ -792,8 +792,8 @@
       "forecast": 0.2,
       "surprise": 0.0,
       "move_1m": -0.027,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2020-01-14",
@@ -810,8 +810,8 @@
       "forecast": 0.2,
       "surprise": 0.0,
       "move_1m": -0.041,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2019-11-13",
@@ -819,8 +819,8 @@
       "forecast": 0.2,
       "surprise": 0.0,
       "move_1m": -0.006,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2019-10-10",
@@ -900,8 +900,8 @@
       "forecast": 0.2,
       "surprise": 0.0,
       "move_1m": -0.068,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2019-01-11",
@@ -909,8 +909,8 @@
       "forecast": 0.2,
       "surprise": 0.0,
       "move_1m": 0.074,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2018-12-12",
@@ -918,8 +918,8 @@
       "forecast": 0.2,
       "surprise": 0.0,
       "move_1m": 0.021,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2018-11-14",
@@ -927,8 +927,8 @@
       "forecast": 0.2,
       "surprise": 0.0,
       "move_1m": 0.088,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2018-10-11",
@@ -954,8 +954,8 @@
       "forecast": 0.2,
       "surprise": 0.0,
       "move_1m": -0.015,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2018-07-12",
@@ -963,8 +963,8 @@
       "forecast": 0.2,
       "surprise": 0.0,
       "move_1m": 0.037,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2018-06-12",
@@ -990,8 +990,8 @@
       "forecast": 0.2,
       "surprise": 0.0,
       "move_1m": 0.097,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2018-03-13",
@@ -999,8 +999,8 @@
       "forecast": 0.2,
       "surprise": 0.0,
       "move_1m": 0.121,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2018-02-14",
@@ -1035,8 +1035,8 @@
       "forecast": 0.2,
       "surprise": 0.0,
       "move_1m": -0.133,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2017-10-13",
@@ -1053,8 +1053,8 @@
       "forecast": 0.2,
       "surprise": 0.0,
       "move_1m": -0.444,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2017-08-11",
@@ -1098,8 +1098,8 @@
       "forecast": 0.2,
       "surprise": 0.0,
       "move_1m": -0.089,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2017-02-15",
@@ -1116,8 +1116,8 @@
       "forecast": 0.2,
       "surprise": 0.0,
       "move_1m": -0.009,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2016-12-15",
@@ -1125,8 +1125,8 @@
       "forecast": 0.2,
       "surprise": 0.0,
       "move_1m": 0.013,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2016-11-17",
@@ -1170,8 +1170,8 @@
       "forecast": 0.2,
       "surprise": 0.0,
       "move_1m": -0.28,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2016-06-16",
@@ -1179,8 +1179,8 @@
       "forecast": 0.2,
       "surprise": 0.0,
       "move_1m": 0.059,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2016-05-17",
@@ -1188,8 +1188,8 @@
       "forecast": 0.2,
       "surprise": 0.0,
       "move_1m": -0.129,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2016-04-14",
@@ -1233,8 +1233,8 @@
       "forecast": 0.2,
       "surprise": 0.0,
       "move_1m": -0.175,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2015-11-17",
@@ -1242,8 +1242,8 @@
       "forecast": 0.2,
       "surprise": 0.0,
       "move_1m": -0.225,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2015-10-15",
@@ -1260,8 +1260,8 @@
       "forecast": 0.1,
       "surprise": 0.0,
       "move_1m": 0.05,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2015-08-19",
@@ -1278,8 +1278,8 @@
       "forecast": 0.2,
       "surprise": 0.0,
       "move_1m": -0.001,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2015-06-18",
@@ -1305,8 +1305,8 @@
       "forecast": 0.2,
       "surprise": 0.0,
       "move_1m": -0.104,
-      "call": NaN,
-      "won": false
+      "call": null,
+      "won": null
     },
     {
       "date": "2015-03-24",
