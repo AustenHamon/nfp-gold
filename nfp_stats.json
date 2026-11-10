@@ -98,6 +98,7 @@
     "win_5m": 0.7372,
     "lean_side": "SELL",
     "lean_win": 0.5507,
+    "lean_desc": null,
     "since": "2015-01-09"
   },
   "history": [

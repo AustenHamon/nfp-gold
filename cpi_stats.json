@@ -6,13 +6,13 @@
   "up_word": "Hotter",
   "down_word": "Cooler",
   "call_rule": "The call is sell when core CPI comes in hotter than forecast and buy when it comes in cooler",
-  "lean_note": "Since 2015, Core CPI came in hotter than forecast in 29% of releases and cooler in 35%, with 36% in line. The lean lands slightly on buy.",
+  "lean_note": "Last month Core CPI came in hotter. Since 2015, after a month like that the next one came in hotter 46%, in line 32% and cooler 22%. If it surprises, it's 68% likely to be hotter, so the lean lands on sell.",
   "updated": "2026-11-10",
-  "next_release": "2026-11-10",
-  "next_forecast": 0.2,
-  "releases": 137,
-  "p_beat": 0.292,
-  "p_buy": 0.5693,
+  "next_release": null,
+  "next_forecast": null,
+  "releases": 138,
+  "p_beat": 0.4634,
+  "p_buy": 0.4599,
   "buckets": [
     {
       "label": "Much cooler",
@@ -52,11 +52,11 @@
       "desc": "Hotter by 0.1",
       "lo": 0.05,
       "hi": 0.15,
-      "n": 33,
-      "p_buy_1m": 0.2121,
-      "p_buy_5m": 0.2424,
-      "avg_1m": -0.2145,
-      "avg_5m": -0.2753
+      "n": 34,
+      "p_buy_1m": 0.2059,
+      "p_buy_5m": 0.2353,
+      "avg_1m": -0.2232,
+      "avg_5m": -0.2875
     },
     {
       "label": "Much hotter",
@@ -87,21 +87,31 @@
       "when": "When core CPI misses the forecast by 0.1 or more",
       "lo": 0.05,
       "hi": null,
-      "n": 88,
-      "win": 0.8636,
-      "avg_move": 0.2888
+      "n": 89,
+      "win": 0.8652,
+      "avg_move": 0.2913
     }
   ],
   "track": {
-    "n": 88,
-    "wins_1m": 76,
-    "win_1m": 0.8636,
-    "win_5m": 0.7841,
-    "lean_side": "BUY",
-    "lean_win": 0.5693,
+    "n": 89,
+    "wins_1m": 77,
+    "win_1m": 0.8652,
+    "win_5m": 0.7865,
+    "lean_side": "SELL",
+    "lean_win": 0.5487,
+    "lean_desc": "right using last month's surprise, tested on 113 releases with only the data known before each one",
     "since": "2015-01-16"
   },
   "history": [
+    {
+      "date": "2026-11-10",
+      "actual": 0.3,
+      "forecast": 0.2,
+      "surprise": 0.1,
+      "move_1m": -0.512,
+      "call": "SELL",
+      "won": true
+    },
     {
       "date": "2026-10-14",
       "actual": 0.3,
@@ -1338,7 +1348,7 @@
   ],
   "live": {
     "wins": 0,
-    "losses": 0,
+    "losses": 1,
     "streak": 0,
     "rows": [
       {
@@ -1346,8 +1356,8 @@
         "call": "BUY",
         "p_beat": 0.303,
         "forecast": 0.2,
-        "move_1m": null,
-        "won": null
+        "move_1m": -0.512,
+        "won": false
       }
     ]
   }
