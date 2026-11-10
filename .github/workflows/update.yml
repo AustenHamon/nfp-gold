@@ -1,11 +1,10 @@
 name: NFP update
 on:
   push:
-    paths: [nfp_consensus.csv]
+    paths: [nfp_consensus.csv, cpi_consensus.csv]   # saves the prediction as soon as you add a forecast
   schedule:
-    - cron: "0 16 * * 5"   # every Friday 18:00 SAST
-    - cron: "0 8 * * 6"    # Saturday backup run
-  workflow_dispatch:        # lets you run it by hand too
+    - cron: "0 16 * * 1-5"   # weekdays 18:00 SAST, after any 8:30 New York release
+  workflow_dispatch:          # run it by hand from the Actions tab
 permissions:
   contents: write
 jobs:
@@ -18,10 +17,10 @@ jobs:
       - run: pip install pandas fredapi tzdata
       - run: python update_pipeline.py
         env:
-            FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
       - run: |
           git config user.name "nfp-bot"
           git config user.email "bot@users.noreply.github.com"
           git add -A
-          git commit -m "NFP update $(date +%F)" || echo "nothing new"
+          git commit -m "Update $(date +%F)" || echo "nothing new"
           git push
